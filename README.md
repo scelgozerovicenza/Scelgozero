@@ -1,5 +1,6 @@
-# <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +32,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Caricamento Bollette e Dati Utente</h1>
 
@@ -51,12 +53,6 @@
     </div>
 
     <form>
-        <label for="nameInput">Nome:</label>
-        <input type="text" id="nameInput" required>
-
-        <label for="surnameInput">Cognome:</label>
-        <input type="text" id="surnameInput" required>
-
         <label for="emailInput">Email:</label>
         <input type="email" id="emailInput" required>
 
@@ -66,8 +62,8 @@
         <label for="idDocumentInput">Documento d'identità:</label>
         <input type="text" id="idDocumentInput" required>
 
-        <label for="fiscalCodeInput">Codice Fiscale:</label>
-        <input type="text" id="fiscalCodeInput" required>
+        <label for="ibanInput">IBAN:</label>
+        <input type="text" id="ibanInput" required>
 
         <button type="button" onclick="submitForm()">Invia</button>
     </form>
@@ -82,4 +78,5 @@
         }
     </script>
 </body>
+
 </html>

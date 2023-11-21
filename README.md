@@ -8,11 +8,11 @@
         body {
             background-image: url('https://scontent.fqpa3-1.fna.fbcdn.net/v/t39.30808-6/398087197_122097271136103429_8513861254678736823_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=p2jDZJaBmGkAX-ZyjUE&_nc_ht=scontent.fqpa3-1.fna&oh=00_AfBHu8QNzT0oxXKDAxGoIeVb48aDtT1_GRcjiiwGdOSd8g&oe=656114C7');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-position: center center;
             color: white;
             padding: 20px;
-            height: 100vh; /* Imposta l'altezza del corpo al 100% della visualizzazione */
-            margin: 0; /* Rimuove i margini predefiniti */
+            height: 100vh;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,10 +22,12 @@
         label,
         input {
             margin-bottom: 10px;
+            width: 100%;
         }
 
         .upload-section {
             margin-bottom: 20px;
+            width: 100%;
         }
 
         button {

@@ -11,13 +11,15 @@
             background-repeat: no-repeat;
             color: white;
             padding: 20px;
+            height: 100vh; /* Imposta l'altezza del corpo al 100% della visualizzazione */
+            margin: 0; /* Rimuove i margini predefiniti */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
+        label,
         input {
             margin-bottom: 10px;
         }

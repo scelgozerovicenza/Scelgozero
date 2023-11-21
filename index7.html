@@ -65,8 +65,14 @@
         <label for="idDocumentInput">Documento d'identità:</label>
         <input type="text" id="idDocumentInput" required>
 
-        <label for="ibanInput">IBAN:</label>
-        <input type="text" id="ibanInput" required>
+        <label for="releaseDateInput">Data di rilascio del documento:</label>
+        <input type="date" id="releaseDateInput" required>
+
+        <label for="expirationDateInput">Data di scadenza del documento:</label>
+        <input type="date" id="expirationDateInput" required>
+
+        <label for="ibanInput">IBAN (27 caratteri):</label>
+        <input type="text" id="ibanInput" pattern="[A-Za-z]{2}[0-9]{2}[A-Za-z0-9]{1,}" title="Inserisci un IBAN valido" maxlength="27" required>
 
         <button type="button" onclick="submitForm()">Invia</button>
     </form>
@@ -83,3 +89,4 @@
 </body>
 
 </html>
+

